@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-    <title>Bootie Ecommerce Bootstrap Responsive Web Template | Home :: W3layouts</title>
+    <title>Crystal Healing Day Spa</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -50,27 +50,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <!-- nav -->
                 <nav class="py-4">
                     <div id="logo">
-                        <h1> <a href="index.html"><span class="fa fa-bold" aria-hidden="true"></span>ootie</a></h1>
+                        <h1> <a href="index.php">Crystal Healing</a></h1>
                     </div>
 
                     <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop" />
                     <ul class="menu mt-2">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li class="active"><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About</a></li>
+                        <li><a href="blog.php">Blog</a></li>
                         <li>
                             <!-- First Tier Drop Down -->
                             <label for="drop-2" class="toggle">Drop Down <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
                             <a href="#">Drop Down <span class="fa fa-angle-down" aria-hidden="true"></span></a>
                             <input type="checkbox" id="drop-2" />
                             <ul>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="shop.html">Shop Now</a></li>
-                                <li><a href="shop-single.html">Single Page</a></li>
+                                <li><a href="blog.php">Blog</a></li>
+                                <li><a href="shop.php">Shop Now</a></li>
+                                <li><a href="shop-single.php">Single Page</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </nav>
                 <!-- //nav -->
@@ -82,8 +82,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <p>Trending of the week</p>
             <h3 class="mb-4">Casual Shoes for Men</h3>
             <div class="ban-buttons">
-                <a href="shop-single.html" class="btn">Shop Now</a>
-                <a href="single.html" class="btn active">Read More</a>
+                <a href="shop-single.php" class="btn">Shop Now</a>
+                <a href="single.php" class="btn active">Read More</a>
             </div>
         </div>
         <!--// banner-inner -->
@@ -149,7 +149,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="item-info-product">
                             <h4>
-                                <a href="shop-single.html">Bella Toes </a>
+                                <a href="shop-single.php">Bella Toes </a>
                             </h4>
 
                             <div class="product_price">
@@ -175,7 +175,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="item-info-product">
                             <h4>
-                                <a href="shop-single.html">Chikku Loafers </a>
+                                <a href="shop-single.php">Chikku Loafers </a>
                             </h4>
 
                             <div class="product_price">
@@ -201,7 +201,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="item-info-product">
                             <h4>
-                                <a href="shop-single.html">(SRV) Sneakers </a>
+                                <a href="shop-single.php">(SRV) Sneakers </a>
                             </h4>
 
                             <div class="product_price">
@@ -227,7 +227,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="item-info-product">
                             <h4>
-                                <a href="shop-single.html">Shuberry Heels</a>
+                                <a href="shop-single.php">Shuberry Heels</a>
                             </h4>
 
                             <div class="product_price">
@@ -253,7 +253,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="item-info-product">
                             <h4>
-                                <a href="shop-single.html">Red Bellies </a>
+                                <a href="shop-single.php">Red Bellies </a>
                             </h4>
 
                             <div class="product_price">
@@ -279,7 +279,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="item-info-product">
                             <h4>
-                                <a href="shop-single.html">Catwalk Flats </a>
+                                <a href="shop-single.php">Catwalk Flats </a>
                             </h4>
 
                             <div class="product_price">
@@ -305,7 +305,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="item-info-product">
                             <h4>
-                                <a href="shop-single.html">Running Shoes </a>
+                                <a href="shop-single.php">Running Shoes </a>
                             </h4>
 
                             <div class="product_price">
@@ -331,7 +331,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="item-info-product">
                             <h4>
-                                <a href="shop-single.html">Sukun Casuals </a>
+                                <a href="shop-single.php">Sukun Casuals </a>
                             </h4>
 
                             <div class="product_price">
@@ -357,7 +357,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="item-info-product">
                             <h4>
-                                <a href="shop-single.html">Bank Sneakers</a>
+                                <a href="shop-single.php">Bank Sneakers</a>
                             </h4>
 
                             <div class="product_price">
@@ -417,36 +417,42 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--/ab -->
     <section class="about py-5">
         <div class="container pb-lg-3">
-            <h3 class="tittle text-center">Popular Products</h3>
+            <h3 class="tittle text-center">Our Work Place</h3>
             <div class="row">
                 <div class="col-md-6 latest-left">
                     <div class="product-shoe-info shoe text-center">
-                        <img src="images/img1.jpg" class="img-fluid" alt="">
-                        <div class="shop-now"><a href="shop.html" class="btn">Shop Now</a></div>
+                        <img src="images/waiting_room.png" class="img-fluid" alt="Waiting room">
                     </div>
                 </div>
                 <div class="col-md-6 latest-right">
-                    <div class="row latest-grids">
-                        <div class="latest-grid1 product-men col-12">
-                            <div class="product-shoe-info shoe text-center">
-                                <div class="men-thumb-item">
-                                    <img src="images/img2.jpg" class="img-fluid" alt="">
-                                    <div class="shop-now"><a href="shop.html" class="btn">Shop Now</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="latest-grid2 product-men col-12 mt-lg-4">
-                            <div class="product-shoe-info shoe text-center">
-                                <div class="men-thumb-item">
-                                    <img src="images/img3.jpg" class="img-fluid" alt="">
-                                    <div class="shop-now"><a href="shop.html" class="btn">Shop Now</a></div>
-
-                                </div>
-                            </div>
-                        </div>
+                    <div class="product-shoe-info shoe text-center">
+                        <img src="images/room_2.png" class="img-fluid" alt="couples massage room">
                     </div>
                 </div>
-            </div>
+           </div>
+               <div class="row latest-grids">
+                   <div class="latest-grid1 product-men col-4">
+                       <div class="product-shoe-info shoe text-center">
+                           <div class="men-thumb-item">
+                               <img src="images/room_1.png" class="img-fluid" alt="personal massage room">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="latest-grid2 product-men col-4">
+                       <div class="product-shoe-info shoe text-center">
+                           <div class="men-thumb-item">
+                               <img src="images/reiki_room.png" class="img-fluid" alt="reiki and third eye opening room">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="latest-grid3 product-men col-4">
+                       <div class="product-shoe-info shoe text-center">
+                           <div class="men-thumb-item">
+                               <img src="images/room_3.png" class="img-fluid" alt="personal massage room">
+                           </div>
+                       </div>
+                   </div>
+              </div>
         </div>
     </section>
     <!-- //ab -->
@@ -482,7 +488,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="row footer-top">
                 <div class="col-lg-4 footer-grid_section_w3layouts">
                     <h2 class="logo-2 mb-lg-4 mb-3">
-                        <a href="index.html"><span class="fa fa-bold" aria-hidden="true"></span>ootie</a>
+                        <a href="index.php"><span class="fa fa-bold" aria-hidden="true"></span>ootie</a>
                     </h2>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <h4 class="sub-con-fo ad-info my-4">Catch on Social</h4>
@@ -525,10 +531,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Information</h3>
                             <ul class="list-unstyled w3layouts-icons">
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.php">Home</a>
                                 </li>
                                 <li class="mt-3">
-                                    <a href="about.html">About Us</a>
+                                    <a href="about.php">About Us</a>
                                 </li>
                                 <li class="mt-3">
                                     <a href="#">Gallery</a>
@@ -537,7 +543,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <a href="#">Services</a>
                                 </li>
                                 <li class="mt-3">
-                                    <a href="contact.html">Contact Us</a>
+                                    <a href="contact.php">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -571,7 +577,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div class="contact-info">
                                 <div class="footer-address-inf">
                                     <h4 class="ad-info mb-2">Phone</h4>
-                                    <p>+121 098 8907 9987</p>
+                                    <p>DO NOT CALL</p>
                                 </div>
                                 <div class="footer-address-inf my-4">
                                     <h4 class="ad-info mb-2">Email </h4>
@@ -586,14 +592,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
                     </div>
+                    <!--delete for possible lawsuit-->
                     <div class="cpy-right text-left row">
-                        <p class="col-md-10">© 2019 Bootie. All rights reserved | Design by
+                        <p class="col-md-10">© 2019 Crystal Healing Day Spa. All rights reserved | Design by
                             <a href="http://w3layouts.com"> W3layouts.</a>
                         </p>
                         <!-- move top icon -->
                         <a href="#home" class="move-top text-right col-md-2"><span class="fa fa-long-arrow-up" aria-hidden="true"></span></a>
                         <!-- //move top icon -->
                     </div>
+                    <!--end of potential lawsuit-->
                 </div>
             </div>
         </div>
