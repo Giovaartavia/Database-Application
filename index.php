@@ -92,7 +92,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!--// banner-inner -->
 
     </div>
-   
+
     <!-- Services -->
     <section class="about py-5">
         <div class="container pb-lg-3">
@@ -114,12 +114,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="row">
                 <div class="col-md-6 latest-left">
                     <div class="product-shoe-info shoe text-center">
-                        <img src="images/waiting_room.png" class="img-fluid" alt="Waiting room">
+                        <img src="images/workplace/waiting_room.png" class="img-fluid" alt="Waiting room">
                     </div>
                 </div>
                 <div class="col-md-6 latest-right">
                     <div class="product-shoe-info shoe text-center">
-                        <img src="images/room_2.png" class="img-fluid" alt="couples massage room">
+                        <img src="images/workplace/room_2.png" class="img-fluid" alt="couples massage room">
                     </div>
                 </div>
            </div>
@@ -127,21 +127,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                    <div class="latest-grid1 product-men col-4">
                        <div class="product-shoe-info shoe text-center">
                            <div class="men-thumb-item">
-                               <img src="images/room_1.png" class="img-fluid" alt="personal massage room">
+                               <img src="images/workplace/room_1.png" class="img-fluid" alt="personal massage room">
                            </div>
                        </div>
                    </div>
                    <div class="latest-grid2 product-men col-4">
                        <div class="product-shoe-info shoe text-center">
                            <div class="men-thumb-item">
-                               <img src="images/reiki_room.png" class="img-fluid" alt="reiki and third eye opening room">
+                               <img src="images/workplace/reiki_room.png" class="img-fluid" alt="reiki and third eye opening room">
                            </div>
                        </div>
                    </div>
                    <div class="latest-grid3 product-men col-4">
                        <div class="product-shoe-info shoe text-center">
                            <div class="men-thumb-item">
-                               <img src="images/room_3.png" class="img-fluid" alt="personal massage room">
+                               <img src="images/workplace/room_3.png" class="img-fluid" alt="personal massage room">
                            </div>
                        </div>
                    </div>
