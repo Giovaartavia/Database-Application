@@ -214,7 +214,7 @@ nav ul ul li a {
     display: block;
 }
 
-/* Second, Third and more Tiers	
+/* Second, Third and more Tiers
  * We move the 2nd and 3rd etc tier dropdowns to the left
  * by the amount of the width of the first tier.
 */
@@ -604,8 +604,7 @@ ul.tic-info li {
 /*-- //features --*/
 /*-- /New-Arrivals --*/
 .product-shoe-info {
-    padding: 15px;
-    border: 1px solid #e4e4e4;
+    padding: 5px;
 }
 
 .item-info-product h4 a {
@@ -808,8 +807,8 @@ li.breadcrumb-item a {
         margin-bottom: 10px;
         text-transform: uppercase;
     }
-    
-    
+
+
 .img-deal1 a {
     font-size: 14px;
     color: #6d6c6c;
@@ -1386,7 +1385,7 @@ a.move-top span {
     .sub-para-w3layouts {
         margin: 0;
     }
-   
+
 }
 
 @media(max-width:480px) {
@@ -1442,7 +1441,7 @@ a.move-top span {
 }
 
 @media(max-width:384px) {
-  
+
 }
 
 @media(max-width:375px) {
@@ -1450,7 +1449,7 @@ a.move-top span {
 }
 
 @media(max-width:320px) {
-  
+
 }
 
 /*--//responsive--*/
