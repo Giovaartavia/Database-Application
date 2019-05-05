@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
 <!DOCTYPE html>
-<html lang="zxx">
+<html>
 
 <head>
     <title>Bootie Ecommerce Bootstrap Responsive Web Template | Home :: W3layouts</title>
@@ -42,6 +42,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <body>
 
+    <?php include 'footer.php';?>
     <!-- mian-content -->
     <div class="main-banner" id="home">
         <!-- header -->
@@ -58,7 +59,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <ul class="menu mt-2">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="login.php">Login</a></li>
                         <li>
                             <!-- First Tier Drop Down -->
                             <label for="drop-2" class="toggle">Drop Down <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
