@@ -50,6 +50,8 @@
   	<p>
   		Already a member? <a href="login.php">Sign in</a>
   	</p>
-  </form>
+	</form>
+	<br/><br/>
+	<a href="index.php" id="back"> BACK</a>
 </body>
 </html>

@@ -66,3 +66,9 @@
     border: 1px solid #3c763d;
     margin-bottom: 20px;
   }
+
+  #back{
+    text-align: center;
+    padding: 50%;
+    /* color: ; */
+  }

@@ -1,9 +1,4 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html>
@@ -59,9 +54,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop" />
                     <ul class="menu mt-2">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="login.php">Login</a></li>
+                        <li class="active"><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About</a></li>
                         <li>
                             <!-- First Tier Drop Down -->
                             <label for="drop-2" class="toggle">Drop Down <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
@@ -73,7 +67,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <li><a href="shop-single.php">Single Page</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.php">Contact</a></li>
+                        <?php 
+                        if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                            echo "<li><a href='logout.php'>Log Out</a></li>";
+                        } else{
+                            echo "<li><a href='login.php'>Log In</a></li>";
+                        }
+                        ?>
                     </ul>
                 </nav>
                 <!-- //nav -->
@@ -304,5 +304,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //footer -->
 
 </body>
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>

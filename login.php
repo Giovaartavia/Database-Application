@@ -26,6 +26,8 @@
   	<p>
   		Not yet a member? <a href="register.php">Sign up</a>
   	</p>
-  </form>
+	</form>
+	<br/><br/>
+	<a href="index.php" id="back"> BACK</a>
 </body>
 </html>

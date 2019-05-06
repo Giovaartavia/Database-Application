@@ -75,8 +75,8 @@ if (isset($_POST['login_user'])) {
         $query = "SELECT * FROM User WHERE Email='$Email' AND Password='$password'";
         $results = mysqli_query($db, $query);
         if (mysqli_num_rows($results) == 1) {
+            $_SESSION['loggedin'] = true;
             $_SESSION['Email'] = $Email;
-            $_SESSION['success'] = "You are now logged in";
             header('location: index.php');
         }else {
             array_push($errors, "Wrong Email/password combination");
