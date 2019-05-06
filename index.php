@@ -56,19 +56,9 @@
                     <ul class="menu mt-2">
                         <li class="active"><a href="index.php">Home</a></li>
                         <li><a href="about.php">About</a></li>
-                        <li>
-                            <!-- First Tier Drop Down -->
-                            <label for="drop-2" class="toggle">Drop Down <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
-                            <a href="#">Drop Down <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                            <input type="checkbox" id="drop-2" />
-                            <ul>
-                                <li><a href="blog.php">Blog</a></li>
-                                <li><a href="shop.php">Shop Now</a></li>
-                                <li><a href="shop-single.php">Single Page</a></li>
-                            </ul>
-                        </li>
                         <?php 
                         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                            echo "<li><a href='userAppointment.php'>View Reservations</a></li>";
                             echo "<li><a href='logout.php'>Log Out</a></li>";
                         } else{
                             echo "<li><a href='login.php'>Log In</a></li>";
