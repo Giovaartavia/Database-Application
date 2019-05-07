@@ -4,6 +4,7 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="zxx">
@@ -47,9 +48,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop" />
                     <ul class="menu mt-2">
-                        <li><a href="index.php">Home</a></li>
+                        <li class='active'><a href="index.php">Home</a></li>
                         <li class="active"><a href="about.html">About</a></li>
-                        <li><a href="userAppointment.php">View Reservations</a></li>
+                        <?php
+                        if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                            echo "<li class='active'><a href='userAppointment.php'>View Reservations</a></li>";
+                            echo "<li class='active'><a href='logout.php'>Log Out</a></li>";
+                        } else{
+                            echo "<li class='active'><a href='login.php'>Log In</a></li>";
+                        ?>
                     </ul>
                 </nav>
                 <!-- //nav -->
