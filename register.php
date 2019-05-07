@@ -20,7 +20,7 @@
   	  <label>Last Name</label>
   	  <input type="text" name="LName" value="<?php echo $LName; ?>">
       </div>
-      <div class="input-group">
+		<div class="input-group">
   	  <label>Date of Birth</label>
   	  <input type="date" name="DoB" value="<?php echo $DoB; ?>">
   	</div>

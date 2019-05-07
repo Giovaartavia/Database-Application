@@ -3,13 +3,12 @@
 include('index_schedule_post.php');
 
 $conn = mysqli_connect('mysql.eecs.ku.edu', 'agiovanni', 'zai7kaiP', 'agiovanni');
-$sql = "SELECT ServiceID, ServiceName, ServicePrice, ServiceDesc FROM Service";
+$sql = "SELECT ServiceID, ServiceName, ServicePrice, ServiceDesc, Picture FROM Service";
 $result = mysqli_query($conn, $sql); 
 
 $count = 0;
 
 echo "<scipt src='js/login.js'></script>";
-
 
 while ($row = mysqli_fetch_assoc($result)) 
 {
@@ -17,6 +16,7 @@ while ($row = mysqli_fetch_assoc($result))
     $service = $row["ServiceName"];
     $price = $row["ServicePrice"];
     $desc = $row["ServiceDesc"];
+    $pic = $row["Picture"];
 
     if($count == 0)
     {
@@ -26,7 +26,7 @@ while ($row = mysqli_fetch_assoc($result))
 
         echo"<div class='product-shoe-info shoe text-center'>";
             echo"<div class='men-thumb-item'>";
-                echo"<img src='images/s1.jpg' class='img-fluid' alt=''>";
+            echo '<img class="img-fluid shrink" src="data:image/jpeg;base64,'.base64_encode( $pic ).'"/>';
             echo"</div>";
 
             // Service Info
