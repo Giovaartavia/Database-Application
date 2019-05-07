@@ -55,7 +55,6 @@
                     <input type="checkbox" id="drop" />
                     <ul class="menu mt-2">
                         <li class="active"><a href="index.php">Home</a></li>
-                        <li class="active"><a href="about.php">About</a></li>
                         <?php
                         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             echo "<li class='active'><a href='userAppointment.php'>View Reservations</a></li>";

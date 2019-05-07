@@ -27,6 +27,10 @@ body a {
     width: 300px;
 }
 
+.userAppointment{
+    padding-bottom: 50%;
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -395,6 +399,21 @@ li > a:only-child:after {
     background-size: cover;
     position: relative;
     height: 50em;
+    background-attachment: fixed;
+}
+
+.main-banner2 {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 3em;
+}
+
+.table{
+    padding: 3rem;
 }
 
 .main-banner.inner {

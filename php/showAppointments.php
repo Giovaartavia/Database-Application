@@ -34,6 +34,9 @@ echo "<table class='table table-striped'>";
   echo "<tbody>";
   while ($row = mysqli_fetch_assoc($results)) 
   {
+    $id = $row["AppointmentID"];
+
+    //Print information
     echo "<tr>";
     echo "<th scope='row'>$count</th>";
     echo "<td>" . $row["ServiceName"] . "</td>";
@@ -41,10 +44,20 @@ echo "<table class='table table-striped'>";
     echo "<td>" . $row["Address"] . "</td>";
     echo "<td>" . $row["Date"] . "</td>";
     echo "<td>";
-        echo "<form action = 'POST'>";
-            // echo "<input type='button' name='" . $row["AppointmentID"] . "' id='" . $row["AppointmentID"] . "'value='DELETE'>";
-            echo "<button type='submit' class='btn' name='test'>Register</button>";
-        echo "</form>";
+      echo "<form method = 'POST'>";
+          echo "<input type='submit' class='btn' name='$id' id='$id' value='DELETE'></input>";
+      echo "</form>";
+
+    //Delete entry if delete button is pressed
+    if(array_key_exists($id,$_POST)){
+      $deleteAppointment = "DELETE FROM Appointment
+      WHERE '$id' = AppointmentID";
+      $query = $db->query($deleteAppointment); 
+      //Reload page if succesfully deleted
+      if($query){
+        echo "<meta http-equiv='refresh' content='0'>";
+      }
+    }
     echo "</td>";
     echo "</tr>";
     $count = $count + 1;
