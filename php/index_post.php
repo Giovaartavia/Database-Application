@@ -68,17 +68,17 @@ while ($row = mysqli_fetch_assoc($result))
 
 
                             //User Logged In:
-                            echo "Welcome to the member's area, " . $FName . "!";
-                            echo "</div>";
+                            echo "Welcome " . $FName . "!
+                            </div>
 
-                            echo "Choose Date and Time";
+                            Set Up Your Appointment
                             
-                            echo "<form method='post' action='index.php'>";
+                            <form method='post' action='index.php'>";
                             include('errors.php');
                             echo"
                                 <div class='input-group'>
                                 <label>Healer</label>
-                                <select class='input-group' id='$Healer_Name' value='$Healer_Name'>
+                                <select class='input-group' name='Healer_Name' id='$Healer_Name' value='$Healer_Name'>
                                 ";
                                 while($val = mysqli_fetch_assoc($healer_result))
                                 {
@@ -91,12 +91,12 @@ while ($row = mysqli_fetch_assoc($result))
 
                                 <div class='input-group'>
                                 <label>Date</label>
-                                <input type='date' name='schedule_date' value='$Date'>
+                                <input type='date' name='Date' value='$Date'>
                                 </div>
 
                                 <div class='input-group'>
                                 <label>Time</label>
-                                <select class='input-group' id='$Time' value='$Time'>
+                                <select class='input-group' name='Time' id='$Time' value='$Time'>
                                   <option>6:00 PM</option>
                                   <option>7:00 PM</option>
                                   <option>8:00 PM</option>
