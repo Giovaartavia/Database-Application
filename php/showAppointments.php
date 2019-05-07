@@ -3,11 +3,12 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == false) {
     die("You need to be logged in to view this page");
 }
 
+
 // connect to the database
 $db = mysqli_connect('mysql.eecs.ku.edu', 'agiovanni', 'zai7kaiP', 'agiovanni');
 
 //Print appointments from logged in user
-$sql = "SELECT Service.ServiceName, Healer.FName, Location.Address, Appointment.Date
+$sql = "SELECT ServiceName, Healer.FName, Location.Address, Appointment.Date, Appointment.AppointmentID
 FROM Appointment, User, Healer, Location, Service
 WHERE Email = '$_SESSION[Email]'
 AND User.UserID = Appointment.UserID
@@ -18,6 +19,8 @@ AND Appointment.ServiceID = Service.ServiceID;";
 $results = mysqli_query($db, $sql) or die("Unable to show");
 $count = 1;
 
+
+//Print table
 echo "<table class='table table-striped'>";
   echo "<thead>";
     echo "<tr>";
@@ -26,6 +29,7 @@ echo "<table class='table table-striped'>";
       echo "<th scope='col'>Healer</th>";
       echo "<th scope='col'>Location</th>";
       echo "<th scope='col'>Date</th>";
+      echo "<th scope='col'></th>";
     echo "</tr>";
   echo "</thead>";
   echo "<tbody>";
@@ -33,9 +37,16 @@ echo "<table class='table table-striped'>";
   {
     echo "<tr>";
     echo "<th scope='row'>$count</th>";
-    foreach($row as $field => $value){
-        echo "<td>$value</td>";
-    }
+    echo "<td>" . $row["ServiceName"] . "</td>";
+    echo "<td>" . $row["FName"] . "</td>";
+    echo "<td>" . $row["Address"] . "</td>";
+    echo "<td>" . $row["Date"] . "</td>";
+    echo "<td>";
+        echo "<form action = 'POST'>";
+            // echo "<input type='button' name='" . $row["AppointmentID"] . "' id='" . $row["AppointmentID"] . "'value='DELETE'>";
+            echo "<input type='submit' name='test' id='test' value='DELETE'>";
+        echo "</form>";
+    echo "</td>";
     echo "</tr>";
     $count = $count + 1;
   }

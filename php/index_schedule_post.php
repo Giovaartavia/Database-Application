@@ -18,7 +18,7 @@ if (isset($_POST['reg_appt'])) {
   alert('HELLO PLEASE WORK')
   </script>
   ";
-  header("Location: ../index.php");
+  // header("Location: /../index.php");
 //   Time
 //   Healer_Name
   
