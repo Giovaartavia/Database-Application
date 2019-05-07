@@ -8,17 +8,22 @@ $errors = array();
 // connect to the database
 $db = mysqli_connect('mysql.eecs.ku.edu', 'agiovanni', 'zai7kaiP', 'agiovanni');
 
-// REGISTER USER
+// REGISTER Appointment
 if (isset($_POST['reg_appt'])) {
   // receive all input values from the form assume location is 1
-  $tempVar = mysqli_real_escape_string($db, $_POST['Date']);
+  $tempVar = mysqli_real_escape_string($db, $_POST['Healer_Name']);
+  $tempVar2 = mysqli_real_escape_string($db, $_POST['Date']);
+  $tempVar3 = mysqli_real_escape_string($db, $_POST['Time']);
+  $date = new DateTime($_POST['Date']);
+//echo $date->getTimestamp();
+
   echo "
   <script>
   
-  alert('HELLO PLEASE WORK')
+  alert('HELLO PLEASE WORK: " . $tempVar . $date->getTimestamp() . $tempVar3  ."')
   </script>
   ";
-  header("Location: ../index.php");
+  //header("Location: index.php");
 //   Time
 //   Healer_Name
   
