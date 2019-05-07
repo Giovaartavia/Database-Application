@@ -9,7 +9,7 @@ html,
 body {
     margin: 0;
     font-size: 100%;
-    background: #fff;
+    background: #F5F5F5;
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
 }
@@ -61,7 +61,7 @@ h6 {
 
 p {
     font-size:0.9em;
-    color: #8c9398;
+    color: #283044;
     line-height: 2em;
     letter-spacing: 1px;
 }
@@ -676,6 +676,10 @@ span.product-new-top {
 
 section#brands {
     background: #1e272e;
+}
+footer#brands {
+    background: #1e272e;
+    color:     #757a7d;
 }
 
 .brand-items a span {

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Crystal Healing Day Spa</title>
+  <title>Sacred Sensations: Reservations</title>
   <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Bootstrap-Core-CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
@@ -24,7 +24,7 @@
                 <!-- nav -->
                 <nav class="py-4">
                     <div id="logo">
-                        <h1> <a>Crystal Healing</a></h1>
+                        <h1> <a>Sacred Sensations</a></h1>
                     </div>
 
                     <label for="drop" class="toggle">Menu</label>
@@ -45,23 +45,45 @@
                 <!-- //nav -->
             </div>
         </header>
-        <!-- //header -->
-        <!--/banner-->
-        <!-- <div class="banner-info">
-            <p>Trending of the week</p>
-            <h3 class="mb-4">Casual Shoes for Men</h3>
-            <div class="ban-buttons">
-                <a href="shop-single.php" class="btn">Shop Now</a>
-                <a href="single.php" class="btn active">Read More</a>
-            </div>
-        </div> -->
-        <!--// banner-inner -->
 
     </div>
     <div class="table">
       <?php include 'php/showAppointments.php';?>
     </div>
 
-  
+  <!-- Footer -->
+    <footer class="brands py-5" id="brands">
+
+    <div class="container py-lg-0">
+                <div class="row text-center brand-items">
+                    <div class="col-sm-2 col-3">
+                        <span class="fa fa-connectdevelop" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-sm-2 col-3">
+                    <span class="fa fa-connectdevelop" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-sm-2 col-3">
+                    <span class="fa fa-connectdevelop" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-sm-2 col-3">
+                    <span class="fa fa-connectdevelop" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-sm-2 col-3 mt-sm-0 mt-4">
+                    <span class="fa fa-connectdevelop" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-sm-2 col-3 mt-sm-0 mt-4">
+                    <span class="fa fa-connectdevelop" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Sacred Sensations: A Crystal Healing Day Spa. All rights reserved | Design by:
+        <a href="http://w3layouts.com"> W3layouts.</a>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 </body>
 </html>
