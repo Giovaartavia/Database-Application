@@ -91,7 +91,6 @@
 
                 <?php include 'php/index_post.php';?>
 
-
             </div>
 
         </div>
