@@ -17,20 +17,21 @@
     <!-- //Fonts -->
 </head>
 <body>
-<div class="main-banner2" id="home">
+     <!-- Banner -->
+     <div class="main-banner inner" id="home">
         <!-- header -->
         <header class="header">
             <div class="container-fluid px-lg-5">
                 <!-- nav -->
                 <nav class="py-4">
                     <div id="logo">
-                        <h1> <a>Sacred Sensations</a></h1>
+                        <h1> <a></span>Sacred Sensations</a></h1>
                     </div>
 
                     <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop" />
                     <ul class="menu mt-2">
-                        <li class="active"><a href="index.php">Home</a></li>
+                        <li class='active'><a href="index.php">Home</a></li>
                         <li class="active"><a href="about.php">About</a></li>
                         <?php
                         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
@@ -45,45 +46,50 @@
                 <!-- //nav -->
             </div>
         </header>
-
     </div>
+
+    <!-- Apointments -->
     <div class="table">
+
+        <div class="container">
+            <div class="inner-sec py-md-5 px-lg-5">
+                <h3 class="tittle text-center"><span class="sub-tittle"> Punishment for Missed Appointments: Measles </span> Reservations </h3>
+            </div>
+        </div>
+
       <?php include 'php/showAppointments.php';?>
     </div>
 
-  <!-- Footer -->
+    <!-- Footer -->
     <footer class="brands py-5" id="brands">
-
-    <div class="container py-lg-0">
-                <div class="row text-center brand-items">
-                    <div class="col-sm-2 col-3">
-                        <span class="fa fa-connectdevelop" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-sm-2 col-3">
+        <div class="container py-lg-0">
+            <div class="row text-center brand-items">
+                <div class="col-sm-2 col-3">
                     <span class="fa fa-connectdevelop" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-sm-2 col-3">
+                </div>
+                <div class="col-sm-2 col-3">
                     <span class="fa fa-connectdevelop" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-sm-2 col-3">
+                </div>
+                <div class="col-sm-2 col-3">
                     <span class="fa fa-connectdevelop" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-sm-2 col-3 mt-sm-0 mt-4">
+                </div>
+                <div class="col-sm-2 col-3">
                     <span class="fa fa-connectdevelop" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-sm-2 col-3 mt-sm-0 mt-4">
+                </div>
+                <div class="col-sm-2 col-3 mt-sm-0 mt-4">
                     <span class="fa fa-connectdevelop" aria-hidden="true"></span>
-                    </div>
+                </div>
+                <div class="col-sm-2 col-3 mt-sm-0 mt-4">
+                    <span class="fa fa-connectdevelop" aria-hidden="true"></span>
                 </div>
             </div>
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2019 Sacred Sensations: A Crystal Healing Day Spa. All rights reserved | Design by:
-        <a href="http://w3layouts.com"> W3layouts.</a>
-    </div>
-    <!-- Copyright -->
-
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Sacred Sensations: A Crystal Healing Day Spa. All rights reserved | Design by:
+            <a href="http://w3layouts.com"> W3layouts.</a>
+        </div>
+        <!-- Copyright -->
     </footer>
-    <!-- Footer -->
+<!-- Footer -->
 </body>
 </html>

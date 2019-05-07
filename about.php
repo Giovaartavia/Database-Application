@@ -4,7 +4,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Crystal Sensations</title>
+    <title>Sacred Sensations</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -36,7 +36,7 @@
                 <!-- nav -->
                 <nav class="py-4">
                     <div id="logo">
-                        <h1> <a></span>Crystal Healing</a></h1>
+                        <h1> <a></span>Sacred Sensations</a></h1>
                     </div>
 
                     <label for="drop" class="toggle">Menu</label>
