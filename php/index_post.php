@@ -73,7 +73,7 @@ while ($row = mysqli_fetch_assoc($result))
 
                             echo "Choose Date and Time";
                             
-                            echo "<form method='post' action='index_post.php'>";
+                            echo "<form method='post' action='index.php'>";
                             include('errors.php');
                             echo"
                                 <div class='input-group'>

@@ -9,11 +9,13 @@ $errors = array();
 $db = mysqli_connect('mysql.eecs.ku.edu', 'agiovanni', 'zai7kaiP', 'agiovanni');
 
 // REGISTER USER
-if (isset($_POST['reg_user'])) {
+if (isset($_POST['reg_appt'])) {
   // receive all input values from the form assume location is 1
+  $tempVar = mysqli_real_escape_string($db, $_POST['Date']);
   echo "
   <script>
-  alert(Date)
+  
+  alert('HELLO PLEASE WORK')
   </script>
   ";
   header("Location: ../index.php");
