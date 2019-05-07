@@ -56,7 +56,7 @@
                     <ul class="menu mt-2">
                         <li class="active"><a href="index.php">Home</a></li>
                         <li><a href="about.php">About</a></li>
-                        <?php 
+                        <?php
                         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             echo "<li><a href='userAppointment.php'>View Reservations</a></li>";
                             echo "<li><a href='logout.php'>Log Out</a></li>";
@@ -71,14 +71,14 @@
         </header>
         <!-- //header -->
         <!--/banner-->
-        <div class="banner-info">
+        <!-- <div class="banner-info">
             <p>Trending of the week</p>
             <h3 class="mb-4">Casual Shoes for Men</h3>
             <div class="ban-buttons">
                 <a href="shop-single.php" class="btn">Shop Now</a>
                 <a href="single.php" class="btn active">Read More</a>
             </div>
-        </div>
+        </div> -->
         <!--// banner-inner -->
 
     </div>
@@ -171,10 +171,10 @@
         <div class="container">
             <div class="row footer-top">
                 <div class="col-lg-4 footer-grid_section_w3layouts">
-                    <h2 class="logo-2 mb-lg-4 mb-3">
+                    <!-- <h2 class="logo-2 mb-lg-4 mb-3">
                         <a href="index.php"><span class="fa fa-bold" aria-hidden="true"></span>ootie</a>
                     </h2>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
                     <h4 class="sub-con-fo ad-info my-4">Catch on Social</h4>
                     <ul class="w3layouts_social_list list-unstyled">
                         <li>
