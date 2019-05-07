@@ -117,14 +117,12 @@ while ($row = mysqli_fetch_assoc($result))
                                 <input type='hidden' name='ServiceID' value='$ID'>
                                 </div>
 
-                                <div class='input-group'>
-                                <button type='submit' class='btn' name='reg_appt'>Reserve</button>
-                                </div>
+                                <div class='modal-footer input-group'>
+                                    <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+                                    <button type='submit' class='btn btn-primary' name='reg_appt'>Reserve</button>
+                                </div>  
                             </form>
                             ";
-                            echo "<div class='modal-footer'>";
-                                echo "<button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>";
-                                echo "<button type='button' class='btn btn-primary'>Reserve</button>";
                         } 
                         else {
                             //User not Logged In:
