@@ -1,5 +1,5 @@
 <?php
-session_start();
+ session_start();
 
 // initializing variables
 $Email = "";
@@ -10,42 +10,59 @@ $db = mysqli_connect('mysql.eecs.ku.edu', 'agiovanni', 'zai7kaiP', 'agiovanni');
 
 // REGISTER Appointment
 if (isset($_POST['reg_appt'])) {
-  // receive all input values from the form assume location is 1
-  $tempVar = mysqli_real_escape_string($db, $_POST['Healer_Name']);
-  $tempVar2 = mysqli_real_escape_string($db, $_POST['Date']);
-  $tempVar3 = mysqli_real_escape_string($db, $_POST['Time']);
-  $date = new DateTime($_POST['Date']);
-//echo $date->getTimestamp();
+  // receive all input values from the form
+  $HealerID = mysqli_real_escape_string($db, $_POST['Healer_ID']);
+  $UserID = mysqli_real_escape_string($db, $_POST['UserID']);
+  $ServiceID = mysqli_real_escape_string($db, $_POST['ServiceID']);
+  $Date = mysqli_real_escape_string($db, $_POST['Date']);
+  $Time = mysqli_real_escape_string($db, $_POST['Time']);
+  $LocationID = "1"; //only current location is 1
 
-  echo "
-  <script>
-  
-  alert('HELLO PLEASE WORK: " . $tempVar . $date->getTimestamp() . $tempVar3  ."')
-  </script>
-  ";
-  //header("Location: index.php");
-//   Time
-//   Healer_Name
-  
 
-/*
-  $HealerID = mysqli_real_escape_string($db, $_POST['Healer_Name']);
-  $LocationID = mysqli_real_escape_string($db, $_POST['LocationID']);
-  $UserID = mysqli_real_escape_string($db, $_POST['Healer_Name']);
-  $ServiceID = mysqli_real_escape_string($db, $_POST['Healer_Name']);
-  $DateTime = mysqli_real_escape_string($db, $_POST['Healer_Name']);
+    //convert time to appropriate format
+    $PM = strpos($Time, 'P');
+    $Datetime = $Date . ' ';
+    $TimeArr = str_split($Time); 
+    $hour = '';
+    $minute = ':00:00';
+
+    if($PM === false){
+        //AM
+        if(count($TimeArr) == 7)
+        {
+            $hour = '0' . $TimeArr[0];
+        }
+        else//8
+        {
+            $hour = $TimeArr[0] . $TimeArr[1];
+        }
+        $DateTimeStamp = $Datetime . $hour . $minute;
+    } 
+    else 
+    {
+        //PM (add 12 hours)
+        if(count($TimeArr) == 7)
+        {
+            $hour = (string)((int)$TimeArr[0] + 12);
+        }
+        else//8
+        {
+            $hour = (string)((int)($TimeArr[0] . $TimeArr[1]) + 12);
+        }
+        $DateTimeStamp = $Datetime . $hour . $minute;
+
+    }
 
   // first check the database to make sure no appointment overlap
   $user_check_query = "SELECT Date FROM Appointment WHERE UserID='$UserID'";
   $healer_check_query = "SELECT Date FROM Appointment WHERE HealerID='$HealerID'";
-
   $resultUDate = mysqli_query($db, $user_check_query);
   $resultHDate = mysqli_query($db, $healer_check_query);
   
   while($userDate = mysqli_fetch_assoc($resultUDate))
   {
     $uTime = $userDate["Date"];
-    if ($DateTime === $uTime) 
+    if ($DateTimeStamp === $uTime) 
     {
       array_push($errors, "Appointment exists for User during this time.");
     }
@@ -55,7 +72,7 @@ if (isset($_POST['reg_appt'])) {
   while($healerDate = mysqli_fetch_assoc($resultHDate))
   {
     $hTime = $userDate["Date"];
-    if ($DateTime === $hTime) 
+    if ($DateTimeStamp === $hTime) 
     {
       array_push($errors, "Appointment exists for Healer during this time.");
     }
@@ -64,15 +81,11 @@ if (isset($_POST['reg_appt'])) {
 
   // If no errors: Schedule
     if (count($errors) == 0) {
-        $sql = "INSERT INTO Appointment ('HealerID', 'LocationID', 'UserID', 'ServiceID', 'Date') 
-                    VALUES('$HealerID', '$LocationID', '$UserID', '$ServiceID', '$DateTime')";
+        $sql = "INSERT INTO Appointment (HealerID, LocationID, UserID, ServiceID, Date) 
+                    VALUES('$HealerID', '$LocationID', '$UserID', '$ServiceID', '$DateTimeStamp')";
                     
         $query = $db->query($sql) or die("Error sending information");
-        if($query){
-            header("Location: login.php");
-        }
     }
-    */
   }
 
 ?>

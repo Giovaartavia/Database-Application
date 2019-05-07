@@ -54,12 +54,13 @@ while ($row = mysqli_fetch_assoc($result))
                         echo "<div class='modal-body'>";
                         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             
-                            $user = "SELECT FName FROM User WHERE User.Email = '". $_SESSION['Email']  ."'";
+                            $user = "SELECT FName, UserID FROM User WHERE User.Email = '". $_SESSION['Email']  ."'";
                             $user_result = mysqli_query($conn, $user); 
                             $row_user = mysqli_fetch_assoc($user_result);
                             $FName = $row_user["FName"];
+                            $UserID = $row_user["UserID"];
 
-                            $healer = "SELECT FName 
+                            $healer = "SELECT FName, Healer.HealerID 
                             FROM Healer, HealerSpecialize 
                             WHERE Healer.HealerID = HealerSpecialize.HealerID
                             AND HealerSpecialize.ServiceID = $ID";
@@ -78,12 +79,13 @@ while ($row = mysqli_fetch_assoc($result))
                             echo"
                                 <div class='input-group'>
                                 <label>Healer</label>
-                                <select class='input-group' name='Healer_Name' id='$Healer_Name' value='$Healer_Name'>
+                                <select class='input-group' name='Healer_ID'>
                                 ";
                                 while($val = mysqli_fetch_assoc($healer_result))
                                 {
                                     $hName = $val["FName"];
-                                    echo "<option>" . $hName . "</option>";
+                                    $hID = $val["HealerID"];
+                                    echo "<option value='$hID'>" . $hName . "</option>";
                                 }
                             echo"
 
@@ -104,7 +106,15 @@ while ($row = mysqli_fetch_assoc($result))
                                   <option>10:00 PM</option>
                                   <option>11:00 PM</option>
                                 </select>
+                                </div>
 
+                                
+                                <div class='input-group'>
+                                <input type='hidden' name='UserID' value='$UserID'>
+                                </div>
+
+                                <div class='input-group'>
+                                <input type='hidden' name='ServiceID' value='$ID'>
                                 </div>
 
                                 <div class='input-group'>
