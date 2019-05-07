@@ -1,9 +1,3 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <?php session_start(); ?>
 
 <!DOCTYPE html>
@@ -42,20 +36,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <!-- nav -->
                 <nav class="py-4">
                     <div id="logo">
-                        <h1> <a href="index.html"></span>Crystal Healing</a></h1>
+                        <h1> <a></span>Crystal Healing</a></h1>
                     </div>
 
                     <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop" />
                     <ul class="menu mt-2">
                         <li class='active'><a href="index.php">Home</a></li>
-                        <li class="active"><a href="about.html">About</a></li>
+                        <li class="active"><a href="about.php">About</a></li>
                         <?php
                         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             echo "<li class='active'><a href='userAppointment.php'>View Reservations</a></li>";
                             echo "<li class='active'><a href='logout.php'>Log Out</a></li>";
                         } else{
                             echo "<li class='active'><a href='login.php'>Log In</a></li>";
+                        }
                         ?>
                     </ul>
                 </nav>
@@ -81,34 +76,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- Footer -->
 <footer class="brands py-5" id="brands">
 
-<div class="container py-lg-0">
-            <div class="row text-center brand-items">
-                <div class="col-sm-2 col-3">
-                    <span class="fa fa-connectdevelop" aria-hidden="true"></span>
-                </div>
-                <div class="col-sm-2 col-3">
+    <div class="container py-lg-0">
+        <div class="row text-center brand-items">
+            <div class="col-sm-2 col-3">
                 <span class="fa fa-connectdevelop" aria-hidden="true"></span>
-                </div>
-                <div class="col-sm-2 col-3">
+            </div>
+            <div class="col-sm-2 col-3">
                 <span class="fa fa-connectdevelop" aria-hidden="true"></span>
-                </div>
-                <div class="col-sm-2 col-3">
+            </div>
+            <div class="col-sm-2 col-3">
                 <span class="fa fa-connectdevelop" aria-hidden="true"></span>
-                </div>
-                <div class="col-sm-2 col-3 mt-sm-0 mt-4">
+            </div>
+            <div class="col-sm-2 col-3">
                 <span class="fa fa-connectdevelop" aria-hidden="true"></span>
-                </div>
-                <div class="col-sm-2 col-3 mt-sm-0 mt-4">
+            </div>
+            <div class="col-sm-2 col-3 mt-sm-0 mt-4">
                 <span class="fa fa-connectdevelop" aria-hidden="true"></span>
-                </div>
+            </div>
+            <div class="col-sm-2 col-3 mt-sm-0 mt-4">
+                <span class="fa fa-connectdevelop" aria-hidden="true"></span>
             </div>
         </div>
+    </div>
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2019 Sacred Sensations: A Crystal Healing Day Spa. All rights reserved | Design by:
-    <a href="http://w3layouts.com"> W3layouts.</a>
-  </div>
-  <!-- Copyright -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Sacred Sensations: A Crystal Healing Day Spa. All rights reserved | Design by:
+        <a href="http://w3layouts.com"> W3layouts.</a>
+    </div>
+    <!-- Copyright -->
 
 </footer>
 <!-- Footer -->
