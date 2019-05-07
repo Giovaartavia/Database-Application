@@ -48,20 +48,20 @@
                 <!-- nav -->
                 <nav class="py-4">
                     <div id="logo">
-                        <h1> <a href="index.php">Crystal Healing</a></h1>
+                        <h1> <a>Crystal Healing</a></h1>
                     </div>
 
                     <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop" />
                     <ul class="menu mt-2">
                         <li class="active"><a href="index.php">Home</a></li>
-                        <li><a href="about.php">About</a></li>
+                        <li class="active"><a href="about.php">About</a></li>
                         <?php
                         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-                            echo "<li><a href='userAppointment.php'>View Reservations</a></li>";
-                            echo "<li><a href='logout.php'>Log Out</a></li>";
+                            echo "<li class='active'><a href='userAppointment.php'>View Reservations</a></li>";
+                            echo "<li class='active'><a href='logout.php'>Log Out</a></li>";
                         } else{
-                            echo "<li><a href='login.php'>Log In</a></li>";
+                            echo "<li class='active'><a href='login.php'>Log In</a></li>";
                         }
                         ?>
                     </ul>
@@ -169,12 +169,9 @@
     <!-- footer -->
     <footer>
         <div class="container">
-            <div class="row footer-top">
+            <!-- <div class="row footer-top">
                 <div class="col-lg-4 footer-grid_section_w3layouts">
-                    <!-- <h2 class="logo-2 mb-lg-4 mb-3">
-                        <a href="index.php"><span class="fa fa-bold" aria-hidden="true"></span>ootie</a>
-                    </h2>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+                    
                     <h4 class="sub-con-fo ad-info my-4">Catch on Social</h4>
                     <ul class="w3layouts_social_list list-unstyled">
                         <li>
@@ -198,9 +195,9 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="col-lg-8 footer-right">
-                    <div class="w3layouts-news-letter">
+                    <!-- <div class="w3layouts-news-letter">
                         <h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Newsletter</h3>
 
                         <p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
@@ -209,9 +206,9 @@
                             <button class="btn1"><span class="fa fa-paper-plane-o" aria-hidden="true"></span></button>
 
                         </form>
-                    </div>
+                    </div> -->
                     <div class="row mt-lg-4 bottom-w3layouts-sec-nav mx-0">
-                        <div class="col-md-4 footer-grid_section_w3layouts">
+                        <!-- <div class="col-md-4 footer-grid_section_w3layouts">
                             <h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Information</h3>
                             <ul class="list-unstyled w3layouts-icons">
                                 <li>
@@ -230,10 +227,10 @@
                                     <a href="contact.php">Contact Us</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                         <div class="col-md-4 footer-grid_section_w3layouts">
                             <!-- social icons -->
-                            <div class="agileinfo_social_icons">
+                            <!-- <div class="agileinfo_social_icons">
                                 <h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Customer Service</h3>
                                 <ul class="list-unstyled w3layouts-icons">
 
@@ -253,11 +250,11 @@
                                         <a href="#">Privacy Plolicy</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <!-- social icons -->
                         </div>
                         <div class="col-md-4 footer-grid_section_w3layouts my-md-0 my-5">
-                            <h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Contact Info</h3>
+                            <!-- <h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Contact Info</h3>
                             <div class="contact-info">
                                 <div class="footer-address-inf">
                                     <h4 class="ad-info mb-2">Phone</h4>
@@ -271,7 +268,7 @@
                                     <h4 class="ad-info mb-2">Location</h4>
                                     <p>Honey Avenue, New York City</p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
 

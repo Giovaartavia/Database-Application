@@ -3,7 +3,6 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == false) {
     die("You need to be logged in to view this page");
 }
 
-
 // connect to the database
 $db = mysqli_connect('mysql.eecs.ku.edu', 'agiovanni', 'zai7kaiP', 'agiovanni');
 
@@ -44,7 +43,7 @@ echo "<table class='table table-striped'>";
     echo "<td>";
         echo "<form action = 'POST'>";
             // echo "<input type='button' name='" . $row["AppointmentID"] . "' id='" . $row["AppointmentID"] . "'value='DELETE'>";
-            echo "<input type='submit' name='test' id='test' value='DELETE'>";
+            echo "<button type='submit' class='btn' name='test'>Register</button>";
         echo "</form>";
     echo "</td>";
     echo "</tr>";
