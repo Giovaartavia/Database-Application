@@ -71,6 +71,8 @@
         </div>
 
         <!-- Healers -->
+        <?php include 'php/about_post.php';?>
+
     </section>
     
     <!-- Footer -->
